@@ -1,6 +1,5 @@
 #!/bin/sh
 
-addgroup -g ${GID} jirafeau && adduser -h /jirafeau -s /bin/sh -D -G jirafeau -u ${UID} jirafeau
 touch /var/run/php-fpm.sock
 
 if [ ! -d /cfg ]; then
@@ -38,5 +37,4 @@ if [ ! -L /etc/php7/php-fpm.conf ]; then
 	ln -s /cfg/php-fpm.conf /etc/php7/php-fpm.conf
 fi
 
-chown -R jirafeau:jirafeau /jirafeau /var/run/php-fpm.sock /var/lib/nginx /tmp /data /cfg /var/tmp/nginx
 supervisord -c /usr/local/etc/supervisord.conf

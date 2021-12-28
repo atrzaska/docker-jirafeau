@@ -11,12 +11,7 @@ A tiny image running [alpine](https://github.com/gliderlabs/docker-alpine) Linux
 		--name=jirafeau \
 		-v /<host_data_directory>:/data \
 		-v /<host_cfg_directory>:/cfg \
-		jgeusebroek/jirafeau
-
-## Optional environment variables
-
-* `UID` User ID php fpm daemon account (default: 4000).
-* `GID` Group ID php fpm daemon account (default: 4000).
+		andrzejtrzaska/jirafeau
 
 ## License
 

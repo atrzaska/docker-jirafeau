@@ -1,8 +1,6 @@
 FROM alpine:latest
 LABEL maintainer="Jeroen Geusebroek <me@jeroengeusebroek.nl>"
 
-ENV GID=4000 UID=4000
-
 RUN apk -U add \
     bash \
     curl \
